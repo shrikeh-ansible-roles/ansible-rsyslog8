@@ -1,0 +1,15 @@
+---
+- name: Add the ppa
+  apt_repository:
+    repo: "{{ rsyslog8_ubuntu_repo_url }}"
+    state: present
+    update_cache: "{{ rsyslog8_ubuntu_repo_update_cache }}"
+
+- name: Install rsyslog8
+  apt:
+    name: "{{ rsyslog8_ubuntu_pkg_name }}"
+    state: "{{ 'latest' if rsyslog8_pkg_install_latest else 'present' }}"
+    update_cache: "{{ rsyslog8_ubuntu_update_cache }}"
+  notify:
+    - restart rsyslog8
+...

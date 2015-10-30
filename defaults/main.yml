@@ -1,0 +1,28 @@
+---
+rsyslog8_pkg_install_latest: no
+
+rsyslog8_ubuntu_repo_url: 'ppa:adiscon/v8-stable'
+rsyslog8_ubuntu_repo_update_cache: yes
+rsyslog8_ubuntu_pkg_name: 'rsyslog'
+rsyslog8_ubuntu_update_cache: yes
+
+
+rsyslog8_rhel_centos_pkg_repo: rsyslog_v8
+rsyslog8_rhel_centos_repo_name: 'Adiscon CentOS-$releasever - local packages for $basearch'
+rsyslog8_rhel_centos_repo_baseurl: 'http://rpms.adiscon.com/v8-stable/epel-$releasever/$basearch'
+rsyslog8_rhel_centos_repo_enabled: '0'
+rsyslog8_rhel_centos_repo_gpgcheck: '0'
+rsyslog8_rhel_centos_repo_gpgkey: 'http://rpms.adiscon.com/RPM-GPG-KEY-Adiscon'
+rsyslog8_rhel_centos_repo_protect: '1'
+
+rsyslog8_rhel_centos_repo_yum_template: 'yum.j2'
+rsyslog8_rhel_centos_repo_yum_repo_id: 'rsyslog8'
+
+rsyslog8_rhel_centos_repo_yum_dest: "/etc/yum.repos.d/{{ rsyslog8_rhel_centos_repo_yum_repo_id }}.repo"
+rsyslog8_rhel_centos_repo_yum_owner: 'root'
+rsyslog8_rhel_centos_repo_yum_group: 'root'
+rsyslog8_rhel_centos_repo_yum_mode: '0644'
+
+rsyslog8_rhel_centos_pkg_name: 'rsyslog'
+rsyslog8_rhel_centos_update_cache: yes
+...

@@ -1,0 +1,9 @@
+---
+- name: Get the Ubuntu install profile
+  include: ubuntu.yml
+  when: ansible_pkg_mgr == 'apt'
+
+- name: Get the CentOS install profile
+  include: rhel-centos.yml
+  when: ansible_pkg_mgr == 'yum'
+...

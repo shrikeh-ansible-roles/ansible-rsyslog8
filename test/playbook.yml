@@ -1,0 +1,15 @@
+---
+- hosts: local
+  tasks:
+    - add_host:
+        groups: testing
+        name: "{{ lookup('env','RSYSLOG8_TEST_HOSTNAME') }}"
+        ansible_connection: "{{ lookup('env','RSYSLOG8_TEST_CONNECTION') }}"
+        ansible_ssh_port: "{{ rsyslog8_test_ssh_port | default('22') }}"
+
+- hosts: testing
+  roles:
+    - { role: '../../' }
+
+
+...
