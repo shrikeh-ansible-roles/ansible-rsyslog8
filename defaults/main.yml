@@ -1,5 +1,5 @@
 ---
-rsyslog8_pkg_install_latest: yes
+rsyslog8_pkg_install_latest: no
 
 rsyslog8_ubuntu_repo_url: 'ppa:adiscon/v8-stable'
 rsyslog8_ubuntu_repo_update_cache: yes
