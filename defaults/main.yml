@@ -6,7 +6,6 @@ rsyslog8_ubuntu_repo_update_cache: yes
 rsyslog8_ubuntu_pkg_name: 'rsyslog'
 rsyslog8_ubuntu_update_cache: yes
 
-
 rsyslog8_rhel_centos_pkg_repo: rsyslog_v8
 rsyslog8_rhel_centos_repo_name: 'Adiscon CentOS-$releasever - local packages for $basearch'
 rsyslog8_rhel_centos_repo_baseurl: 'http://rpms.adiscon.com/v8-stable/epel-$releasever/$basearch'
