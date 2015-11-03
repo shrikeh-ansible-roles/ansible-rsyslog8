@@ -7,7 +7,7 @@
 
 - name: Install rsyslog8
   apt:
-    name: "{{ rsyslog8_ubuntu_pkg_name }}=8.*"
+    name: "{{ rsyslog8_ubuntu_pkg_name }}={{ rsyslog_min_version }}"
     state: "{{ 'latest' if rsyslog8_pkg_install_latest else 'present' }}"
     update_cache: "{{ rsyslog8_ubuntu_update_cache }}"
   notify:

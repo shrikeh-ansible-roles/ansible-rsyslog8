@@ -1,5 +1,6 @@
 ---
 rsyslog8_service_name: rsyslog
+rsyslog_min_version: '8.*''
 
 rsyslog8_pkg_install_latest: no
 
