@@ -15,5 +15,5 @@ Ansible role to install version 8 of rsyslogd on CentOS or Debian flavours.
 ------------------
 Contact me on Twitter @[barney_hanlon][twitter]
 
-[licence]: https://raw.githubusercontent.com/shrikeh/ansible-**role_name**/master/LICENSE
+[licence]: https://raw.githubusercontent.com/shrikeh/ansible-rsyslog8/master/LICENSE "Link to the license in the repository"
 [twitter]: https://twitter.com/barney_hanlon "Link to my Twitter page"
